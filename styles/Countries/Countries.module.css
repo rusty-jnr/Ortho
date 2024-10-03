@@ -1,0 +1,211 @@
+/* .careers {
+} */
+.countries .hero {
+  background-color: #000;
+  min-height: 80vh;
+  width: 100vw;
+  background-image: url("/images/svg/hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 200px;
+}
+.countries .hero .sec_one h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  width: 90%;
+  line-height: 60px;
+  color: #fff;
+  text-align: left;
+}
+.countries .hero .sec_one h2 span {
+  color: #ffde59;
+}
+.countries .hero .sec_one p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  width: 85%;
+  color: #fff;
+  text-align: left;
+}
+.countries .hero .sec_one .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countries .hero .sec_one .form_container {
+  padding: 10px 30px 60px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  min-height: 450px;
+  width: 80%;
+}
+.countries .hero .sec_one .form_container h3 {
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.countries .hero .sec_one .form_container .form_holder {
+  display: block;
+  margin-bottom: 20px;
+}
+.countries .hero .sec_one .form_container .form_holder label {
+  color: rgb(0, 0, 0);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.countries .hero .sec_one .form_container .form_holder input {
+  height: 60px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px 10px;
+  font-family: "IBM Plex Sans", sans-serif;
+  border: 1px solid #000000;
+  margin-top: 10px;
+}
+.countries .hero .sec_one .form_container .form_holder button {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  transition: all .4s ease-in-out;
+}
+.countries .hero .sec_one .form_container .form_holder button:disabled{
+  background-color: rgba(255, 222, 89, 0.5);
+  border: 1px solid rgba(255, 222, 89, 0.5);
+  cursor: not-allowed;
+}
+.countries .hero .sec_one .form_container .form_holder input::placeholder{
+  color: #18191F80;
+}
+
+.countries .spacer {
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_info {
+  text-align: center;
+  position: absolute;
+  top: -100px;
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.hero_info h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  width: 70%;
+}
+.hero_info p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.hero_info p span {
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .countries .hero .sec_one h2 {
+    font-size: 35px;
+    line-height: 40px;
+    width: 100%;
+  }
+  .countries .hero .sec_one p {
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .countries .spacer {
+    height: 200px;
+  }
+  .hero_info {
+    width: 60%;
+  }
+  .hero_info h2 {
+    font-size: 23px;
+    width: 90%;
+  }
+  .hero_info p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .countries .hero .sec_one .form_container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .countries .hero {
+    padding-bottom: 150px;
+  }
+  .hero_info {
+    width: 90%;
+  }
+  .countries .hero .sec_one h2 {
+    margin-top: 30px;
+  }
+  .countries .hero .sec_one h2,
+  .countries .hero .sec_one p {
+    text-align: center;
+  }
+  .countries .spacer {
+    height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .countries .hero .sec_one h2 {
+    font-size: 32px;
+    width: 100%;
+    line-height: 46px;
+  }
+  .countries .hero .sec_one p {
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+  }
+  .hero_info h2 {
+    font-size: 15px;
+    width: 90%;
+  }
+  .countries .spacer {
+    height: 115px;
+  }
+  .hero_info p {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 90%;
+  }
+  .countries .hero .sec_one .form_container {
+    padding: 10px 15px 60px 15px;
+  }
+  .countries .hero .sec_one .form_container h3 {
+    font-size: 18px;
+  }
+}

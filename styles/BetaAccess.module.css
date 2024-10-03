@@ -1,0 +1,146 @@
+.beta {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  background-image: url("/images/svg/hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3000;
+  padding: 20px 120px 50px 120px;
+  overflow-x: auto;
+  transition: all 0.2s ease-in-out;
+  transform: translateX(-100%);
+}
+.beta.open {
+  transform: translateX(0%);
+}
+.beta .close {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.beta img {
+  cursor: pointer;
+}
+
+/* request form */
+.request_form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.request_form h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+}
+.request_form h2 span {
+  color: #ffde59;
+}
+.request_form .form_holder {
+  display: block;
+  margin-bottom: 20px;
+  width: 40%;
+}
+.request_form .form_holder label {
+  color: #fff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.request_form .form_holder input {
+  height: 60px;
+  border-radius: 8px;
+  padding: 15px 25px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.request_form .form_holder input::placeholder{
+  color: #17161A;
+}
+.request_form .form_holder button {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: #FFDE59;
+  border: 1px solid #FFDE59;
+  color: #17161A;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  transition: all .4s ease-in-out;
+}
+.request_form .form_holder button:disabled{
+  background-color: rgba(255, 222, 89, 0.5);
+  border: 1px solid rgba(255, 222, 89, 0.5);
+  cursor: not-allowed;
+}
+
+/* alert */
+.noti {
+  position: absolute;
+  background-color: #fff;
+  top: 25px;
+  right: 0;
+  min-width: 350px;
+  padding: 20px;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  transition: all .3s ease-in-out;
+  transform: translateX(100%);
+}
+.noti.open {
+  transform: translateX(0%);
+}
+.noti p {
+  margin: 0;
+  font-family: "Gilroy L";
+  display: flex;
+  align-items: center;
+}
+.noti p img {
+  margin-right: 10px;
+}
+.noti p span {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+@media(max-width: 1024px) {
+  .beta {
+    padding: 20px 50px 50px 50px;
+  }
+  .request_form .form_holder {
+    width: 60%;
+  }
+}
+@media(max-width: 600px) {
+  .beta {
+    padding: 20px 20px 50px 20px;
+  }
+  .request_form .form_holder {
+    width: 100%;
+  }
+  .request_form .form_holder input {
+    height: 50px;
+    border-radius: 8px;
+    padding: 15px 25px;
+  }
+  .request_form h2 {
+    width: 100%;
+    font-size: 28px;
+    text-align: left;
+  }
+}

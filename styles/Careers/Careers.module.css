@@ -1,0 +1,211 @@
+/* .careers {
+} */
+.careers .hero {
+  background-color: #000;
+  min-height: 90vh;
+  width: 100vw;
+  background-image: url("/images/svg/hero.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 200px;
+}
+.careers .hero .sec_one h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  width: 70%;
+  line-height: 60px;
+  color: #fff;
+  text-align: left;
+}
+.careers .hero .sec_one h2 span {
+  color: #ffde59;
+}
+.careers .hero .sec_one p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  width: 85%;
+  color: #fff;
+  text-align: left;
+}
+.careers .hero .sec_one img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.careers .spacer {
+  height: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_info {
+  text-align: center;
+  position: absolute;
+  top: -100px;
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.hero_info h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  width: 70%;
+}
+.hero_info p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.hero_info p span {
+  font-weight: 600;
+}
+
+/* choosing_ortho */
+.choosing_ortho {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000;
+}
+.choosing_ortho h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 43px;
+  font-weight: 700;
+  width: 38%;
+  color: #fff;
+  line-height: 62px;
+}
+.choosing_ortho h2 span {
+  color: #ffde59;
+}
+.offer_boxes {
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  padding: 55px 20px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease-in-out;
+  background-color: #313131;
+}
+.offer_boxes img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.offer_boxes h4 {
+  color: #fff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  width: 70%;
+}
+.offer_boxes p {
+  color: #fff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+@media (max-width: 1024px) {
+  .careers .hero .sec_one h2 {
+    font-size: 35px;
+    line-height: 40px;
+    width: 100%;
+  }
+  .careers .hero .sec_one p {
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+  }
+  .careers .spacer {
+    height: 200px;
+  }
+  .hero_info {
+    width: 60%;
+  }
+  .hero_info h2 {
+    font-size: 23px;
+    width: 90%;
+  }
+  .hero_info p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .choosing_ortho h2 {
+    font-size: 35px;
+    width: 50%;
+    line-height: 40px;
+  }
+  .offer_boxes h4 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .careers .hero {
+    padding-bottom: 150px;
+  }
+  .choosing_ortho h2 {
+    font-size: 35px;
+    width: 90%;
+    line-height: 40px;
+  }
+  .hero_info {
+    width: 90%;
+  }
+  .careers .hero .sec_one h2 {
+    margin-top: 30px;
+  }
+  .careers .hero .sec_one h2, .careers .hero .sec_one p {
+    text-align: center;
+  }
+  .careers .spacer {
+    height: 150px;
+  }
+}
+@media (max-width: 600px) {
+  .careers .hero .sec_one h2 {
+    font-size: 32px;
+    width: 100%;
+    line-height: 46px;
+  }
+  .careers .hero .sec_one p {
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+  }
+  .hero_info h2 {
+    font-size: 15px;
+    width: 90%;
+  }
+  .careers .spacer {
+    height: 115px;
+  }
+  .hero_info p {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 90%;
+  }
+  .choosing_ortho h2 {
+    font-size: 24px;
+    width: 90%;
+    line-height: 31px;
+  }
+}

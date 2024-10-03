@@ -1,0 +1,94 @@
+/* join community */
+.join_community {
+  background-color: #000;
+  position: relative;
+  min-height: 800px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.join_community > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  z-index: 2;
+}
+.join_community h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #fff;
+  text-align: center;
+}
+.join_community h2 span {
+  color: #ffde59;
+}
+.join_community p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
+  width: 60%;
+}
+.join_community button {
+  width: 180px;
+  height: 50px;
+  background: #ffde59;
+  border: 1px solid #ffde59;
+  color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+}
+.join_community img {
+  position: absolute;
+  bottom: 50px;
+  width: 80%;
+}
+.join_community svg {
+  position: absolute;
+  bottom: 50px;
+}
+@media (min-width: 1441px) {
+  .join_community img {
+    width: auto;
+  }
+}
+@media (max-width: 768px){
+  .join_community img {
+    padding: 0px 20px;
+  }
+  .join_community {
+    min-height: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .join_community img {
+    display: none;
+  }
+  .join_community {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 400px;
+    justify-content: center;
+  }
+  .join_community > div {
+    margin-top: 0px;
+  }
+  .join_community h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .join_community p {
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+  }
+}

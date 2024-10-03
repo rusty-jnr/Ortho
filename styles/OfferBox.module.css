@@ -1,0 +1,106 @@
+.offer_box {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  padding: 55px 20px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  transition: all .4s ease-in-out;
+}
+.offer_box:nth-child(odd) {
+  background-color: #ffde591a;
+}
+.offer_box:nth-child(even) {
+  background-color: #afafaf26;
+}
+.offer_img {
+  position: absolute;
+  top: -20px;
+  background-color: #17161a;
+  border: 1px solid #17161a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all .4s ease-in-out;
+}
+.offer_img img {
+  width: 35px;
+}
+.offer_content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.offer_content > div {
+  flex-grow: 1;
+}
+.offer_content h4 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  transition: all .4s ease-in-out;
+}
+.offer_content p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  width: 100% !important;
+  transition: all .4s ease-in-out;
+}
+.offer_content button {
+  width: 180px;
+  height: 50px;
+  background: #17161a;
+  border: 1px solid #17161a;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  transition: all .4s ease-in-out;
+}
+
+/* on hover effect */
+.offer_box:hover {
+  transform: translateY(-10%);
+  background-color: #17161a;
+}
+.offer_box:hover h4, .offer_box:hover p {
+  color: #fff;
+}
+.offer_box:hover .offer_img {
+  background-color: #fff;
+}
+.offer_box:hover .offer_content button {
+  background-color: #fff;
+  color: #17161a;
+}
+@media (max-width: 768px) {
+  .offer_box:hover:nth-child(odd) {
+    transform: translateY(0%);
+    background-color: #ffde591a;
+  }
+  .offer_box:hover:nth-child(even) {
+    transform: translateY(0%);
+    background-color: #afafaf26;
+  }
+  .offer_box:hover h4, .offer_box:hover p {
+    color: inherit;
+  }
+  .offer_box:hover .offer_img {
+    background-color: #17161a;
+  }
+  .offer_box:hover .offer_content button {
+    background-color: #17161a;
+    color: #fff;
+  }
+}
+@media (max-width: 600px) {
+  .offer_content h4 {
+    font-size: 20px;
+  }
+}

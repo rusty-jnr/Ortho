@@ -1,0 +1,36 @@
+{
+  "name": "ortho-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "PORT=3006 next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "antd": "^4.21.4",
+    "axios": "^0.27.2",
+    "framer-motion": "^6.4.3",
+    "next": "12.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.3.5",
+    "react-multi-carousel": "^2.8.2",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-saga": "^1.1.3",
+    "reselect": "^4.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.0",
+    "@types/react": "18.0.14",
+    "@types/react-dom": "18.0.5",
+    "@types/react-redux": "^7.1.24",
+    "@types/redux": "^3.6.0",
+    "@types/redux-saga": "^0.10.5",
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.2.0",
+    "typescript": "4.7.4"
+  }
+}
